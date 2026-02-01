@@ -1,0 +1,214 @@
+{
+  "technical_factors": {
+    "communication_cost": {
+      "tff": {
+        "total_bytes": 37634000,
+        "per_round_bytes": 1505360.0
+      },
+      "flower": {
+        "total_bytes": 36738000,
+        "per_round_bytes": 1469520.0
+      },
+      "winner": "Flower"
+    },
+    "security": {
+      "model_poisoning": {
+        "attack_description": "Add +100 to gradients from malicious clients",
+        "tff_results": {
+          "10pct": {
+            "metrics_after": {
+              "accuracy": 0.7659574468085106,
+              "precision": 0.7192982456140351,
+              "recall": 0.8723404255319149,
+              "f1_score": 0.7884615384615384,
+              "loss": 0.4627348482608795
+            },
+            "accuracy_drop": 0.0,
+            "f1_drop": 0.003430353430353472,
+            "precision_drop": -0.0064028684850813145,
+            "recall_drop": 0.018237082066869248,
+            "loss_increase": -0.0012177824974060059
+          },
+          "20pct": {
+            "metrics_after": {
+              "accuracy": 0.7462006079027356,
+              "precision": 0.697560975609756,
+              "recall": 0.8693009118541033,
+              "f1_score": 0.774018944519621,
+              "loss": 0.4894007444381714
+            },
+            "accuracy_drop": 0.019756838905775065,
+            "f1_drop": 0.017872947372270853,
+            "precision_drop": 0.015334401519197738,
+            "recall_drop": 0.021276595744680882,
+            "loss_increase": 0.025448113679885864
+          },
+          "30pct": {
+            "metrics_after": {
+              "accuracy": 0.7507598784194529,
+              "precision": 0.7007299270072993,
+              "recall": 0.8753799392097265,
+              "f1_score": 0.7783783783783784,
+              "loss": 0.49974533915519714
+            },
+            "accuracy_drop": 0.015197568389057725,
+            "f1_drop": 0.013513513513513487,
+            "precision_drop": 0.012165450121654486,
+            "recall_drop": 0.015197568389057725,
+            "loss_increase": 0.03579270839691162
+          }
+        },
+        "flower_results": {
+          "10pct": {
+            "metrics_after": {
+              "accuracy": 0.7826747720364742,
+              "precision": 0.8444444444444444,
+              "recall": 0.6930091185410334,
+              "f1_score": 0.7612687813021702,
+              "loss": 0.6135909557342529
+            },
+            "accuracy_drop": 0.006079027355623046,
+            "f1_drop": 0.022557035183055296
+          },
+          "20pct": {
+            "metrics_after": {
+              "accuracy": 0.7629179331306991,
+              "precision": 0.8680851063829788,
+              "recall": 0.6200607902735562,
+              "f1_score": 0.723404255319149,
+              "loss": 0.6210734248161316
+            },
+            "accuracy_drop": 0.02583586626139811,
+            "f1_drop": 0.060421561166076554
+          },
+          "30pct": {
+            "metrics_after": {
+              "accuracy": 0.7826747720364742,
+              "precision": 0.8780487804878049,
+              "recall": 0.6565349544072948,
+              "f1_score": 0.7513043478260869,
+              "loss": 0.6159780025482178
+            },
+            "accuracy_drop": 0.006079027355623046,
+            "f1_drop": 0.03252146865913863
+          }
+        },
+        "tff_robustness": 0.9883714630648383,
+        "flower_robustness": 0.9744176690031809,
+        "winner": "TFF"
+      },
+      "data_poisoning": {
+        "attack_description": "Flip labels (buggy <-> non-buggy) for malicious clients",
+        "tff_results": {
+          "10pct": {
+            "metrics_after": {
+              "accuracy": 0.7416413373860182,
+              "precision": 0.6897374701670644,
+              "recall": 0.878419452887538,
+              "f1_score": 0.7727272727272727,
+              "loss": 0.5096049904823303
+            },
+            "accuracy_drop": 0.024316109422492405,
+            "f1_drop": 0.0191646191646192,
+            "precision_drop": 0.023157906961889352,
+            "recall_drop": 0.012158054711246202,
+            "loss_increase": 0.0456523597240448
+          },
+          "20pct": {
+            "metrics_after": {
+              "accuracy": 0.7537993920972644,
+              "precision": 0.7238605898123325,
+              "recall": 0.8206686930091185,
+              "f1_score": 0.7692307692307693,
+              "loss": 0.5435324907302856
+            },
+            "accuracy_drop": 0.012158054711246202,
+            "f1_drop": 0.022661122661122635,
+            "precision_drop": -0.010965212683378689,
+            "recall_drop": 0.06990881458966569,
+            "loss_increase": 0.07957985997200012
+          },
+          "30pct": {
+            "metrics_after": {
+              "accuracy": 0.6930091185410334,
+              "precision": 0.6788732394366197,
+              "recall": 0.7325227963525835,
+              "f1_score": 0.7046783625730995,
+              "loss": 0.6198444366455078
+            },
+            "accuracy_drop": 0.07294832826747721,
+            "f1_drop": 0.08721352931879245,
+            "precision_drop": 0.03402213769233409,
+            "recall_drop": 0.15805471124620063,
+            "loss_increase": 0.1558918058872223
+          }
+        },
+        "flower_results": {
+          "10pct": {
+            "metrics_after": {
+              "accuracy": 0.7796352583586627,
+              "precision": 0.7738095238095238,
+              "recall": 0.790273556231003,
+              "f1_score": 0.7819548872180451,
+              "loss": 0.6434987187385559
+            },
+            "accuracy_drop": 0.009118541033434568,
+            "f1_drop": 0.0018709292671804656
+          },
+          "20pct": {
+            "metrics_after": {
+              "accuracy": 0.7051671732522796,
+              "precision": 0.8571428571428571,
+              "recall": 0.49240121580547114,
+              "f1_score": 0.6254826254826255,
+              "loss": 0.6598650813102722
+            },
+            "accuracy_drop": 0.0835866261398176,
+            "f1_drop": 0.15834319100260008
+          },
+          "30pct": {
+            "metrics_after": {
+              "accuracy": 0.5835866261398176,
+              "precision": 0.7477477477477478,
+              "recall": 0.25227963525835867,
+              "f1_score": 0.37727272727272726,
+              "loss": 0.6770329475402832
+            },
+            "accuracy_drop": 0.20516717325227962,
+            "f1_drop": 0.4065530892124983
+          }
+        },
+        "tff_robustness": 0.960256372742375,
+        "flower_robustness": 0.8558934083486982,
+        "winner": "TFF"
+      },
+      "overall_robustness": {
+        "tff": 0.9743139179036067,
+        "flower": 0.9151555386759396,
+        "winner": "TFF"
+      }
+    }
+  },
+  "baseline_comparison": {
+    "tff": {
+      "accuracy": 0.7659574468085106,
+      "precision": 0.7128953771289538,
+      "recall": 0.8905775075987842,
+      "f1_score": 0.7918918918918919,
+      "loss": 0.4639526307582855
+    },
+    "flower": {
+      "accuracy": 0.7887537993920972,
+      "precision": 0.802547770700637,
+      "recall": 0.7659574468085106,
+      "f1_score": 0.7838258164852255,
+      "loss": 0.6161895990371704
+    }
+  },
+  "summary": {
+    "communication_winner": "Flower",
+    "model_poisoning_winner": "TFF",
+    "data_poisoning_winner": "TFF",
+    "overall_security_winner": "TFF"
+  }
+}

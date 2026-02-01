@@ -1,0 +1,186 @@
+{
+  "factors": {
+    "documentation": {
+      "tff": 4,
+      "flower": 5,
+      "winner": "Flower"
+    },
+    "dependency": {
+      "tff": 4,
+      "flower": 5,
+      "winner": "Flower"
+    },
+    "memory_usage": {
+      "tff": 5,
+      "flower": 4,
+      "winner": "TFF"
+    },
+    "backward_compatibility": {
+      "tff": 4,
+      "flower": 5,
+      "winner": "Flower",
+      "python_support_score": {
+        "tensorflow": 27,
+        "pytorch": 32,
+        "max_possible": 40
+      }
+    }
+  },
+  "version_compatibility": {
+    "tensorflow_versions": {
+      "TensorFlow Version": [
+        "TF 2.18.x (Latest)",
+        "TF 2.17.x",
+        "TF 2.16.x",
+        "TF 2.15.x",
+        "TF 2.14.x",
+        "TF 2.13.x",
+        "TF 2.12.x",
+        "TF 2.10.x",
+        "TF 2.8.x",
+        "TF 2.6.x"
+      ],
+      "Python 3.9": [
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713"
+      ],
+      "Python 3.10": [
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2717",
+        "\u2717"
+      ],
+      "Python 3.11": [
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2717",
+        "\u2717",
+        "\u2717",
+        "\u2717"
+      ],
+      "Python 3.12": [
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2717",
+        "\u2717",
+        "\u2717",
+        "\u2717",
+        "\u2717",
+        "\u2717",
+        "\u2717"
+      ],
+      "Release Year": [
+        "2024",
+        "2024",
+        "2024",
+        "2023",
+        "2023",
+        "2023",
+        "2023",
+        "2022",
+        "2022",
+        "2021"
+      ]
+    },
+    "pytorch_versions": {
+      "PyTorch Version": [
+        "PyTorch 2.5.x (Latest)",
+        "PyTorch 2.4.x",
+        "PyTorch 2.3.x",
+        "PyTorch 2.2.x",
+        "PyTorch 2.1.x",
+        "PyTorch 2.0.x",
+        "PyTorch 1.13.x",
+        "PyTorch 1.12.x",
+        "PyTorch 1.11.x",
+        "PyTorch 1.10.x"
+      ],
+      "Python 3.9": [
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713"
+      ],
+      "Python 3.10": [
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713"
+      ],
+      "Python 3.11": [
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2717",
+        "\u2717",
+        "\u2717"
+      ],
+      "Python 3.12": [
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2713",
+        "\u2717",
+        "\u2717",
+        "\u2717",
+        "\u2717",
+        "\u2717"
+      ],
+      "Release Year": [
+        "2024",
+        "2024",
+        "2024",
+        "2024",
+        "2023",
+        "2023",
+        "2022",
+        "2022",
+        "2022",
+        "2021"
+      ]
+    }
+  },
+  "summary": {
+    "tff_total": 17,
+    "tff_average": 4.25,
+    "flower_total": 19,
+    "flower_average": 4.75,
+    "overall_winner": "Flower (PyTorch)"
+  }
+}
